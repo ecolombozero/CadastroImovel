@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cadastroimovel.FXMLCadastroController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="503.0" prefWidth="763.0">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <TextField fx:id="textField_id" layoutX="27.0" layoutY="105.0" />
+            <TextField fx:id="textField_Endereco" layoutX="33.0" layoutY="187.0" prefHeight="31.0" prefWidth="577.0" />
+            <TextField fx:id="textField_Cidade" layoutX="423.0" layoutY="265.0" />
+            <TextField fx:id="textField_Complemento" layoutX="33.0" layoutY="265.0" prefHeight="31.0" prefWidth="187.0" />
+            <TextField fx:id="textField_Numero" layoutX="648.0" layoutY="187.0" prefHeight="31.0" prefWidth="75.0" />
+            <TextField fx:id="textField_Proprietario" layoutX="250.0" layoutY="105.0" prefHeight="31.0" prefWidth="471.0" />
+            <TextField fx:id="textField_UF" layoutX="648.0" layoutY="265.0" prefHeight="31.0" prefWidth="75.0" />
+            <TextField fx:id="textField_CEP" layoutX="253.0" layoutY="265.0" prefHeight="31.0" prefWidth="139.0" />
+            <Text layoutX="27.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+            <Text layoutX="250.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Proprietário" wrappingWidth="204.8828125" />
+            <Text layoutX="32.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço Imóvel" wrappingWidth="177.6708984375" />
+            <Text layoutX="648.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº" wrappingWidth="57.6708984375" />
+            <Text layoutX="33.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento" wrappingWidth="123.6708984375" />
+            <Text layoutX="422.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" />
+            <Text layoutX="648.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF" />
+            <Text layoutX="253.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" wrappingWidth="138.6708984375" />
+            <Text layoutX="-9.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CADASTRO DE IMÓVEL - VENDA" textAlignment="CENTER" underline="true" wrappingWidth="773.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnAdicionar" layoutX="33.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleAdicionar" prefHeight="31.0" prefWidth="95.0" text="Adicionar" />
+            <Button fx:id="btnLimpar" layoutX="500.0" layoutY="333.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="31.0" prefWidth="228.0" text="Limpar" />
+            <Button fx:id="btnExcluir" layoutX="270.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleExcluir" prefHeight="31.0" prefWidth="95.0" text="Excluir" />
+            <Button fx:id="btnSalvar" layoutX="158.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleSalvar" prefHeight="31.0" prefWidth="75.0" text="Salvar" />
+            <Button fx:id="btnCancelar" layoutX="392.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleCancelar" text="Cancelar" />
+            <Button fx:id="btnVender" layoutX="229.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleVender" prefHeight="31.0" prefWidth="327.0" text="Vender" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
